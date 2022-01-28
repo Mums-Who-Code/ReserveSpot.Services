@@ -14,13 +14,14 @@ namespace ReserveSpot.Services.Api
     public class Startup
     {
         public Startup(IConfiguration configuration) =>
-                    Configuration = configuration;
+            Configuration = configuration;
 
         public IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            
             services.AddSwaggerGen(options =>
             {
                 var OpenApiInfo = new OpenApiInfo
@@ -41,6 +42,7 @@ namespace ReserveSpot.Services.Api
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
+                
                 app.UseSwaggerUI(options =>
                 {
                     options.SwaggerEndpoint(
