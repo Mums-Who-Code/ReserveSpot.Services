@@ -21,7 +21,7 @@ namespace ReserveSpot.Services.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            
+
             services.AddSwaggerGen(options =>
             {
                 var OpenApiInfo = new OpenApiInfo
@@ -42,7 +42,7 @@ namespace ReserveSpot.Services.Api
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                
+
                 app.UseSwaggerUI(options =>
                 {
                     options.SwaggerEndpoint(
