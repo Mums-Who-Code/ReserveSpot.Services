@@ -3,12 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReserveSpot.Services.Infrastructure.Build", "ReserveSpot.Services.Infrastructure.Build\ReserveSpot.Services.Infrastructure.Build.csproj", "{0EB0A816-9255-49A1-90C7-21D89AF12095}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReserveSpot.Services.Infrastructure.Build", "ReserveSpot.Services.Infrastructure.Build\ReserveSpot.Services.Infrastructure.Build.csproj", "{0EB0A816-9255-49A1-90C7-21D89AF12095}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EF3C511D-CB92-4679-B147-ED603DCFB074}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		.gitignore = .gitignore
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReserveSpot.Services.Api", "ReserveSpot.Services.Api\ReserveSpot.Services.Api.csproj", "{18F99442-1652-4C19-A962-393835B760CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +23,10 @@ Global
 		{0EB0A816-9255-49A1-90C7-21D89AF12095}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EB0A816-9255-49A1-90C7-21D89AF12095}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EB0A816-9255-49A1-90C7-21D89AF12095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18F99442-1652-4C19-A962-393835B760CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18F99442-1652-4C19-A962-393835B760CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18F99442-1652-4C19-A962-393835B760CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18F99442-1652-4C19-A962-393835B760CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
