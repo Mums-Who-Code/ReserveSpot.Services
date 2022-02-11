@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using ReserveSpot.Services.Api.Brokers.DateTime;
 
 namespace ReserveSpot.Services.Api
 {
@@ -21,6 +22,7 @@ namespace ReserveSpot.Services.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSingleton<IDateTimeBroker, DateTimeBroker>();
 
             services.AddSwaggerGen(options =>
             {
