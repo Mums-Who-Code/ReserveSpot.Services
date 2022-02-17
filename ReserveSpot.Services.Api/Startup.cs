@@ -22,7 +22,7 @@ namespace ReserveSpot.Services.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<IDateTimeBroker, DateTimeBroker>();
+            services.AddTransient<IDateTimeBroker, DateTimeBroker>();
 
             services.AddSwaggerGen(options =>
             {
