@@ -25,7 +25,7 @@ namespace ReserveSpot.Services.Api
         {
             services.AddControllers();
             AddBrokers(services);
-            
+
             services.AddSwaggerGen(options =>
             {
                 var OpenApiInfo = new OpenApiInfo
@@ -41,8 +41,8 @@ namespace ReserveSpot.Services.Api
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        { 
-              if (env.IsDevelopment())
+        {
+            if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
@@ -60,7 +60,7 @@ namespace ReserveSpot.Services.Api
             app.UseAuthorization();
             app.UseEndpoints(endpoints => endpoints.MapControllers());
         }
-            
+
         private void AddBrokers(IServiceCollection services)
         {
             services.AddTransient<IDateTimeBroker, DateTimeBroker>();
