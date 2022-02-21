@@ -51,7 +51,7 @@ namespace ReserveSpot.Services.Api
                 {
                     options.SwaggerEndpoint(
                         url: "/swagger/v1/swagger.json",
-                        name: "Random.Services.Api v1");
+                        name: "ReserveSpot.Services.Api v1");
                 });
             }
 
