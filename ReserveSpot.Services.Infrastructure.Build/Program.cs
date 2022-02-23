@@ -23,12 +23,12 @@ namespace ReserveSpot.Services.Infrastructure.Build
                 {
                     Push = new PushEvent
                     {
-                        Branches = new String[] { "master" }
+                        Branches = new String[] { "main" }
                     },
 
                     PullRequest = new PullRequestEvent
                     {
-                        Branches = new String[] { "master" }
+                        Branches = new String[] { "main" }
                     }
                 },
 
