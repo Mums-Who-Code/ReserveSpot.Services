@@ -51,7 +51,7 @@ namespace ReserveSpot.Services.Infrastructure.Build
 
                                 TargetDotNetVersion = new TargetDotNetVersion
                                 {
-                                    DotNetVersion = "7.0.0-preview.1",
+                                    DotNetVersion = "6.0.100",
                                     IncludePrerelease = true
                                 }
                             },
