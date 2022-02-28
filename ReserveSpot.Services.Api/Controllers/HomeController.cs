@@ -12,7 +12,7 @@ namespace ReserveSpot.Services.Api.Controllers
     public class HomeController : RESTFulController
     {
         [HttpGet]
-        public ActionResult<string> get() =>
+        public ActionResult<string> Get() =>
             Ok("Hurry Up! Reserve Your Spot. We are happy to see you playing sports.");
     }
 }
