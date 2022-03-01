@@ -7,8 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using ReserveSpot.Services.Api.Brokers.DateTime;
+using ReserveSpot.Services.Api.Brokers.Loggings;
 
 namespace ReserveSpot.Services.Api
 {
@@ -22,7 +24,7 @@ namespace ReserveSpot.Services.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddTransient<IDateTimeBroker, DateTimeBroker>();
+            AddBrokers(services);
 
             services.AddSwaggerGen(options =>
             {
@@ -57,6 +59,13 @@ namespace ReserveSpot.Services.Api
             app.UseRouting();
             app.UseAuthorization();
             app.UseEndpoints(endpoints => endpoints.MapControllers());
+        }
+
+        private void AddBrokers(IServiceCollection services)
+        {
+            services.AddTransient<IDateTimeBroker, DateTimeBroker>();
+            services.AddTransient<ILogger, Logger<LoggingBroker>>();
+            services.AddTransient<ILoggingBroker, LoggingBroker>();
         }
     }
 }
