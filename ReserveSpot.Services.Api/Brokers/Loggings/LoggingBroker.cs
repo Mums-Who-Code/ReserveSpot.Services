@@ -2,8 +2,8 @@
 // Copyright (c) MumsWhoCode. All rights reserved.
 // ------------------------------------------------
 
-using Microsoft.Extensions.Logging;
 using System;
+using Microsoft.Extensions.Logging;
 
 namespace ReserveSpot.Services.Api.Brokers.Loggings
 {
@@ -13,7 +13,7 @@ namespace ReserveSpot.Services.Api.Brokers.Loggings
 
         public LoggingBroker(ILogger<LoggingBroker> logger) =>
             this.logger = logger;
-        
+
         public void LogInformation(string message) =>
             this.logger.LogInformation(message);
 
