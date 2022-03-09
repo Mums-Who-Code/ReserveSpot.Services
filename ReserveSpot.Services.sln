@@ -13,7 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReserveSpot.Services.Api", "ReserveSpot.Services.Api\ReserveSpot.Services.Api.csproj", "{18F99442-1652-4C19-A962-393835B760CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReserveSpot.Services.Tests.Unit", "ReserveSpot.Services.Tests.Unit\ReserveSpot.Services.Tests.Unit.csproj", "{F17B8868-EBF6-449C-8802-09508690E09C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReserveSpot.Services.Tests.Unit", "ReserveSpot.Services.Tests.Unit\ReserveSpot.Services.Tests.Unit.csproj", "{F17B8868-EBF6-449C-8802-09508690E09C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReserveSpot.Services.Tests.Acceptance", "ReserveSpot.Services.Tests.Acceptance\ReserveSpot.Services.Tests.Acceptance.csproj", "{FE2B006F-67C9-476A-AD9A-42879959A3E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F17B8868-EBF6-449C-8802-09508690E09C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F17B8868-EBF6-449C-8802-09508690E09C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F17B8868-EBF6-449C-8802-09508690E09C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE2B006F-67C9-476A-AD9A-42879959A3E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE2B006F-67C9-476A-AD9A-42879959A3E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE2B006F-67C9-476A-AD9A-42879959A3E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE2B006F-67C9-476A-AD9A-42879959A3E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
