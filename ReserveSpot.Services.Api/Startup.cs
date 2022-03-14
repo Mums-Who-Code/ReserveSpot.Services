@@ -11,6 +11,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using ReserveSpot.Services.Api.Brokers.DateTime;
 using ReserveSpot.Services.Api.Brokers.Loggings;
+using ReserveSpot.Services.Api.Brokers.Storages;
 
 namespace ReserveSpot.Services.Api
 {
@@ -66,6 +67,7 @@ namespace ReserveSpot.Services.Api
             services.AddTransient<IDateTimeBroker, DateTimeBroker>();
             services.AddTransient<ILogger, Logger<LoggingBroker>>();
             services.AddTransient<ILoggingBroker, LoggingBroker>();
+            services.AddTransient<IStorageBroker, StorageBroker>();
         }
     }
 }
