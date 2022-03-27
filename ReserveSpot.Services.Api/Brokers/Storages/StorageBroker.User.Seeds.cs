@@ -19,7 +19,6 @@ namespace ReserveSpot.Services.Api.Brokers.Storages
             };
 
             modelBuilder.Entity<User>().HasData(serviceAdminUser);
-
         }
     }
 }
