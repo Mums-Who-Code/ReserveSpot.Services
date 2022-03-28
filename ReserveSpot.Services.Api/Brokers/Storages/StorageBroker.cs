@@ -20,8 +20,7 @@ namespace ReserveSpot.Services.Api.Brokers.Storages
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) =>
             SeedUsers(modelBuilder);
-
-
+            
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string connectionString = this.configuration.GetConnectionString("DefaultConnection");
