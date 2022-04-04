@@ -25,6 +25,7 @@ namespace ReserveSpot.Services.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<StorageBroker>();
             AddBrokers(services);
 
             services.AddSwaggerGen(options =>
