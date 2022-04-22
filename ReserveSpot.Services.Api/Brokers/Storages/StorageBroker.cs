@@ -18,9 +18,12 @@ namespace ReserveSpot.Services.Api.Brokers.Storages
             this.Database.Migrate();
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder) =>
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
             SeedUsers(modelBuilder);
-            
+            SetGroundReferences(modelBuilder);
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string connectionString = this.configuration.GetConnectionString("DefaultConnection");
