@@ -1,6 +1,7 @@
 ﻿// ------------------------------------------------
 // Copyright (c) MumsWhoCode. All rights reserved.
 // ------------------------------------------------
+
 using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 

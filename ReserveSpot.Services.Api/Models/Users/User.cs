@@ -16,6 +16,7 @@ namespace ReserveSpot.Services.Api.Models.Users
 
         [JsonIgnore]
         public IEnumerable<Ground> CreatedGrounds { get; set; }
+
         [JsonIgnore]
         public IEnumerable<Ground> UpdatedGrounds { get; set; }
     }
